@@ -31,7 +31,7 @@ function App() {
         mode === "dark" ? "dark-mode" : "light-mode"
       }`}
     >
-      <Navigation parentToChild={{ mode }} modeChange={handleModeChange} />
+      <Navigation mode={mode} handleModeChange={handleModeChange} />
       <FadeIn transitionDuration={700}>
         <Main />
         <Expertise />
