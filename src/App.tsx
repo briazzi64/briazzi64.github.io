@@ -1,24 +1,19 @@
 import { useState, useEffect } from "react";
-import {
-  Main,
-  Timeline,
-  Expertise,
-  Project,
-  Navigation,
-  Footer,
-} from "./components";
+import { Box, CssBaseline } from "@mui/material";
+import { Timeline } from "@mui/icons-material";
 import FadeIn from "./components/FadeIn";
+import Navigation from "./components/Navigation";
+import Main from "./components/Main";
+import Expertise from "./components/Expertise";
+import Footer from "./components/Footer";
+import Project from "./components/Project";
 import "./index.scss";
 
 function App() {
-  const [mode, setMode] = useState<string>("dark");
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
-  const handleModeChange = () => {
-    if (mode === "dark") {
-      setMode("light");
-    } else {
-      setMode("dark");
-    }
+  const toggleIsDarkMode = () => {
+    setIsDarkMode((prevState) => !prevState);
   };
 
   useEffect(() => {
@@ -26,12 +21,11 @@ function App() {
   }, []);
 
   return (
-    <div
-      className={`main-container ${
-        mode === "dark" ? "dark-mode" : "light-mode"
-      }`}
+    <Box
+      className={`main-container ${isDarkMode ? "dark-mode" : "light-mode"}`}
     >
-      <Navigation mode={mode} handleModeChange={handleModeChange} />
+      <CssBaseline />
+      <Navigation isDarkMode={isDarkMode} toggleIsDarkMode={toggleIsDarkMode} />
       <FadeIn transitionDuration={700}>
         <Main />
         <Expertise />
@@ -39,7 +33,7 @@ function App() {
         <Project />
       </FadeIn>
       <Footer />
-    </div>
+    </Box>
   );
 }
 
