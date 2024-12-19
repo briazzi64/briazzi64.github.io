@@ -10,17 +10,17 @@ import {
 import ListIcon from "@mui/icons-material/List";
 import { navItems } from "../constants/navItems";
 
-type DrawerContentProps = {
+type NavigationDrawerProps = {
   mobileOpen: boolean;
   toggleMobileOpen: () => void;
   scrollToSection: (section: string) => void;
 };
 
-export default function DrawerContent({
+export default function NavigationDrawer({
   mobileOpen,
   toggleMobileOpen,
   scrollToSection,
-}: DrawerContentProps) {
+}: NavigationDrawerProps) {
   return (
     <nav>
       <Drawer

@@ -3,7 +3,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import { useEffect, useState } from "react";
-import Drawer from "./Drawer";
+import NavigationDrawer from "./NavigationDrawer";
 import { navItems } from "../constants/navItems";
 
 type NavigationProps = {
@@ -80,7 +80,7 @@ export default function Navigation({
           </Box>
         </Toolbar>
       </AppBar>
-      <Drawer
+      <NavigationDrawer
         mobileOpen={mobileOpen}
         toggleMobileOpen={toggleMobileOpen}
         scrollToSection={scrollToSection}

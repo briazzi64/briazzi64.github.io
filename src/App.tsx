@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import { Box, CssBaseline } from "@mui/material";
-import { Timeline } from "@mui/icons-material";
 import FadeIn from "./components/FadeIn";
 import Navigation from "./components/Navigation";
 import Main from "./components/Main";
 import Expertise from "./components/Expertise";
 import Footer from "./components/Footer";
-import Project from "./components/Project";
+import CareerHistory from "./components/CareerHistory";
+import Projects from "./components/Projects";
 import "./index.scss";
 
 function App() {
@@ -29,8 +29,8 @@ function App() {
       <FadeIn transitionDuration={700}>
         <Main />
         <Expertise />
-        <Timeline />
-        <Project />
+        <CareerHistory />
+        <Projects />
       </FadeIn>
       <Footer />
     </Box>

@@ -1,22 +1,10 @@
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import "../assets/styles/Footer.scss";
+import ContactLinks from "./ContactLinks";
 
 function Footer() {
   return (
     <footer>
-      <div>
-        <a href="https://github.com/briazzi64" target="_blank" rel="noreferrer">
-          <GitHubIcon />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/brian-riazzi-a7592222/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <LinkedInIcon />
-        </a>
-      </div>
+      <ContactLinks />
     </footer>
   );
 }

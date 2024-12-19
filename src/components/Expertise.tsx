@@ -1,46 +1,13 @@
 import "@fortawesome/free-regular-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ExpertiseSkill from "./ExpertiseSkill";
+import { faComputer, faMobileAlt } from "@fortawesome/free-solid-svg-icons";
 import {
   faAndroid,
   faApple,
   faPython,
 } from "@fortawesome/free-brands-svg-icons";
-import { faComputer, faMobileAlt } from "@fortawesome/free-solid-svg-icons";
-import Chip from "@mui/material/Chip";
+import { frontendLabels, reactNativeLabels } from "../constants/expertise";
 import "../assets/styles/Expertise.scss";
-
-const labelsFirst = [
-  "React",
-  "Vue",
-  "TypeScript",
-  "JavaScript",
-  "HTML5",
-  "CSS3",
-  "SASS",
-  "C#",
-  "Jest",
-  "Playwright",
-  "WCAG",
-];
-
-const labelsSecond = [
-  "React Native",
-  "Expo",
-  "EAS",
-  "App Store Deployments",
-  "Maestro",
-  "Detox",
-];
-
-const labelsThird = [
-  "OpenAI",
-  "Groq",
-  "LangChain",
-  "Qdrant",
-  "Hugging Face",
-  "LlamaIndex",
-  "Streamlit",
-];
 
 export default function Expertise() {
   return (
@@ -48,69 +15,31 @@ export default function Expertise() {
       <div className="skills-container">
         <h1>Expertise</h1>
         <div className="skills-grid">
-          <div className="skill">
-            <FontAwesomeIcon
-              icon={faComputer}
-              size="3x"
-              style={{ marginRight: "10px" }}
-            />
-            <FontAwesomeIcon icon={faMobileAlt} size="3x" />
-            <h3>Front End Web Development</h3>
-            <p>
-              I have built a diverse array of web applications from scratch
-              using modern technologies such as React and Flask. I have a strong
-              proficiency in the SDLC process and frontend + backend
-              development.
-            </p>
-            <div className="flex-chips">
-              <span className="chip-title">Tech stack:</span>
-              {labelsFirst.map((label, index) => (
-                <Chip key={index} className="chip" label={label} />
-              ))}
-            </div>
-          </div>
-
-          <div className="skill">
-            <FontAwesomeIcon
-              icon={faApple}
-              size="3x"
-              style={{ marginRight: "10px" }}
-            />
-            <FontAwesomeIcon
-              icon={faAndroid}
-              size="3x"
-              style={{ marginBottom: "-7px" }}
-            />
-            <h3>React Native Mobile App Development</h3>
-            <p>
-              Once the application is built, I help clients set up DevOps
-              testing, CI/CD pipelines, and deployment automation to support the
-              successful Go-Live.
-            </p>
-            <div className="flex-chips">
-              <span className="chip-title">Tech stack:</span>
-              {labelsSecond.map((label, index) => (
-                <Chip key={index} className="chip" label={label} />
-              ))}
-            </div>
-          </div>
-
-          <div className="skill">
-            <FontAwesomeIcon icon={faPython} size="3x" />
-            <h3>GenAI & LLM</h3>
-            <p>
-              Stay relevant in the market by leveraging the latest AI models in
-              your projects. I have professional experience building enterprise
-              grade GenAI-enabled solutions to empower intelligent decision
-              making.
-            </p>
-            <div className="flex-chips">
-              <span className="chip-title">Tech stack:</span>
-              {labelsThird.map((label, index) => (
-                <Chip key={index} className="chip" label={label} />
-              ))}
-            </div>
-          </div>
+          <ExpertiseSkill
+            icons={[faMobileAlt, faComputer]}
+            title="Front End Web Development"
+            description="I have built a diverse portfolio of web applications from scratch
+              using modern technologies such as React, Vue, and C#. I have a
+              strong proficiency in front end development and can even help out
+              assist on the back end side as well!"
+            labels={frontendLabels}
+          />
+          <ExpertiseSkill
+            icons={[faApple, faAndroid]}
+            title="React Native App Development"
+            description="I have built and managed React Native apps that are used by
+              thousands of users in the United States. That includes building
+              and deploying the code to App Stores with Expo Application
+              Services (EAS) and managing a CI/CD pipeline that runs Maestro E2E
+              tests to ensure code quality."
+            labels={reactNativeLabels}
+          />
+          <ExpertiseSkill
+            icons={[faPython]}
+            title="something"
+            description="something"
+            labels={[]}
+          />
         </div>
       </div>
     </div>
