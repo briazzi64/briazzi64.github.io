@@ -1,5 +1,5 @@
-import mock09 from "../assets/images/mock09.png";
-import mock10 from "../assets/images/mock10.png";
+import vs from "../assets/images/vs.png";
+import ws from "../assets/images/ws.jpg";
 import "../assets/styles/Project.scss";
 
 function Project() {
@@ -9,7 +9,7 @@ function Project() {
       <div className="projects-grid">
         <div className="project">
           <a href="https://www.filmate.club/" target="_blank" rel="noreferrer">
-            <img src={mock10} className="zoom" alt="thumbnail" width="100%" />
+            <img src={ws} className="zoom" alt="thumbnail" width="100%" />
           </a>
           <a href="https://www.filmate.club/" target="_blank" rel="noreferrer">
             <h2>Filmate AI</h2>
@@ -25,7 +25,7 @@ function Project() {
             target="_blank"
             rel="noreferrer"
           >
-            <img src={mock09} className="zoom" alt="thumbnail" width="100%" />
+            <img src={vs} className="zoom" alt="thumbnail" width="100%" />
           </a>
           <a
             href="https://yujisatojr.itch.io/highspeedchase"
