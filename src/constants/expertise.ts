@@ -15,9 +15,19 @@ export const frontendLabels = [
 export const reactNativeLabels = [
   "React Native",
   "Expo",
-  "EAS",
+  "Native Permissions",
   "App Store Deployments",
+  "Firebase",
   "Maestro",
   "Detox",
-  "Firebase",
+];
+
+export const devOpsLabels = [
+  "Git",
+  "GitHub Actions",
+  "EAS",
+  "Fastlane",
+  "Android Studio",
+  "AWS",
+  "Azure",
 ];

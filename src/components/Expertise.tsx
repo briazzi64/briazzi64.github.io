@@ -6,7 +6,11 @@ import {
   faApple,
   faPython,
 } from "@fortawesome/free-brands-svg-icons";
-import { frontendLabels, reactNativeLabels } from "../constants/expertise";
+import {
+  devOpsLabels,
+  frontendLabels,
+  reactNativeLabels,
+} from "../constants/expertise";
 import "../assets/styles/Expertise.scss";
 
 export default function Expertise() {
@@ -18,7 +22,7 @@ export default function Expertise() {
           <ExpertiseSkill
             icons={[faMobileAlt, faComputer]}
             title="Front End Web Development"
-            description="I have built a diverse portfolio of web applications from scratch
+            description="I have a diverse portfolio of web applications
               using modern technologies such as React, Vue, and C#. I have a
               strong proficiency in front end development and can even help out
               assist on the back end side as well!"
@@ -30,15 +34,15 @@ export default function Expertise() {
             description="I have built and managed React Native apps that are used by
               thousands of users in the United States. That includes building
               and deploying the code to App Stores with Expo Application
-              Services (EAS) and managing a CI/CD pipeline that runs Maestro E2E
+              Services (EAS) and managing a CI/CD pipelines that run Maestro E2E
               tests to ensure code quality."
             labels={reactNativeLabels}
           />
           <ExpertiseSkill
             icons={[faPython]}
-            title="something"
-            description="something"
-            labels={[]}
+            title="DevOps & Automation"
+            description="Once the application is built, I help clients set up DevOps testing, CI/CD pipelines, and deployment automation to support the successful Go-Live."
+            labels={devOpsLabels}
           />
         </div>
       </div>
