@@ -4,6 +4,9 @@ import { faComputer, faMobileAlt } from "@fortawesome/free-solid-svg-icons";
 import {
   faAndroid,
   faApple,
+  faAws,
+  faDocker,
+  faGit,
   faPython,
 } from "@fortawesome/free-brands-svg-icons";
 import {
@@ -39,7 +42,7 @@ export default function Expertise() {
             labels={reactNativeLabels}
           />
           <ExpertiseSkill
-            icons={[faPython]}
+            icons={[faAws]}
             title="DevOps & Automation"
             description="Once the application is built, I help clients set up DevOps testing, CI/CD pipelines, and deployment automation to support the successful Go-Live."
             labels={devOpsLabels}
