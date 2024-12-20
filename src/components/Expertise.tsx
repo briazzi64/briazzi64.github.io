@@ -1,14 +1,7 @@
 import "@fortawesome/free-regular-svg-icons";
 import ExpertiseSkill from "./ExpertiseSkill";
 import { faComputer, faMobileAlt } from "@fortawesome/free-solid-svg-icons";
-import {
-  faAndroid,
-  faApple,
-  faAws,
-  faDocker,
-  faGit,
-  faPython,
-} from "@fortawesome/free-brands-svg-icons";
+import { faAndroid, faApple, faAws } from "@fortawesome/free-brands-svg-icons";
 import {
   devOpsLabels,
   frontendLabels,
