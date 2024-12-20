@@ -85,6 +85,16 @@ function Timeline() {
               "Managed the design and user interface for the mobile applications.",
             ]}
           />
+          <CareerHistoryItem
+            date="June 2011 - July 2012"
+            title="Web Developer"
+            company="Authority Host"
+            descriptions={[
+              "Created 3 responsive, 2 mobile, and 8 desktop websites built on the Joomla CMS platform.",
+              "Managed the content and CMS updates for three clients.",
+              "Provided customer support through training exercises and personal attention for every client.",
+            ]}
+          />
         </VerticalTimeline>
       </Box>
     </Box>
